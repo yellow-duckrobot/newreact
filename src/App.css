@@ -1,0 +1,101 @@
+/* App.css */
+body {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-container {
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .dashboard-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1f2937;
+    padding: 0 1rem;
+  }
+  
+  .flex-layout {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem; /* Added margin to separate cards better */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .status-online {
+    background-color: #16a34a;
+  }
+  
+  .status-offline {
+    background-color: #dc2626;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .card-text {
+    color: #4b5563;
+    margin-bottom: 1rem; /* Improved spacing for text */
+    padding: 0 1rem; /* Added horizontal padding for better readability */
+  }
+  
+  .sale-badge {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background-color: #ef4444;
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; 
+  }
+  .old-price {
+    text-decoration: line-through;
+    color: #9e9e9e;
+    margin-right: 0.5rem;
+  }
+  
+  .discounted-price {
+    color: #16a34a;
+    font-weight: bold;
+  }
